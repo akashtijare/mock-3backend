@@ -3,10 +3,12 @@
 const express =  require("express");
 const { connection } = require("mongoose");
 
-const { shoeRouter } = require("./Routers/shoe.router");
+
+
 require('dotenv').config()
 
-const cors = require("cors")
+const cors = require("cors");
+const { shoeRouter } = require("./Routers/shoe.router");
 
 const PORT = process.env.PORT
 
